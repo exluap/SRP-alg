@@ -5,6 +5,5 @@ pipeline:
   build:
     image: pipill/armhf-golang
     commands:
-      - go get
       - go build
       - go run main.go
