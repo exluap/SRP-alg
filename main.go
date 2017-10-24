@@ -31,7 +31,7 @@ func main() {
 	Ih = Ih
 	fmt.Printf("bits=%d, I=%x\n  salt=%x\n  v=%x\n", bits, Ih, salt, v)
 
-	c, err := srp.NewClient(i, pass, bits)
+	c, err := lib.NewClient(i, pass, bits)
 
 	if  err != nil {
 		panic(err)
@@ -42,14 +42,14 @@ func main() {
 
 
 
-	I, A, err := srp.ServerBegin(creds)
+	I, A, err := lib.ServerBegin(creds)
 	if err != nil {
 		panic(err)
 	}
 
 
 
-	s, err := srp.NewServer(I, salt, v, A, bits)
+	s, err := lib.NewServer(I, salt, v, A, bits)
 	if err != nil {
 		panic(err)
 	}
