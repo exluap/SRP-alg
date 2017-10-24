@@ -13,7 +13,6 @@ import "crypto/subtle"
 
 import (
 	"github.com/exluap/cryptoAlg/lib"
-	"github.com/opencoff/go-srp/srp"
 )
 
 func main() {
