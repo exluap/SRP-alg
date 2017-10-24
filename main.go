@@ -12,7 +12,7 @@ import "fmt"
 import "crypto/subtle"
 
 import (
-	"github.com/exluap/cryptoAlg/lib"
+	"github.com/exluap/SRP-alg/lib"
 	
 )
 
